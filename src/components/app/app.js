@@ -1,26 +1,15 @@
 import React from 'react'
-
-import logo from '../../assets/logo.svg'
-import './app.css'
+import Button from '@material-ui/core/Button'
+import CssBaseline from '@material-ui/core/CssBaseline'
 
 function App () {
   return (
-    <div className='app'>
-      <header className='app-header'>
-        <img src={logo} className='app-logo' alt='logo' />
-        <p>
-          Edit <code>src/app.js</code> and save to reload.
-        </p>
-        <a
-          className='app-link'
-          href='https://reactjs.org'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <CssBaseline />
+      <Button variant='contained' color='primary'>
+        Hello World
+      </Button>
+    </>
   )
 }
 
